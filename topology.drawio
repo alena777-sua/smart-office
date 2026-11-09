@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="network" name="Логическая схема">
+    <mxGraphModel dx="1694" dy="949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="r" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eaf2fb;strokeColor=#3e6c9c;strokeWidth=2;fontColor=#152b45;fontSize=15;spacing=8;" value="Cisco RTR&#xa;Маршрутизатор / шлюз&#xa;192.168.10.1/24" vertex="1">
+          <mxGeometry height="80" width="260" x="555" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eaf2fb;strokeColor=#3e6c9c;strokeWidth=2;fontColor=#152b45;fontSize=15;spacing=8;" value="Cisco SW&#xa;Коммутатор / управление VLAN 10&#xa;192.168.10.2/24" vertex="1">
+          <mxGeometry height="90" width="340" x="515" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="win" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f8fc;strokeColor=#7791ac;strokeWidth=2;fontColor=#152b45;fontSize=14;spacing=8;" value="WIN&#xa;Windows Server 2019&#xa;Рабочее место администратора&#xa;192.168.10.10/24" vertex="1">
+          <mxGeometry height="115" width="235" x="55" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="ctrl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f8fc;strokeColor=#7791ac;strokeWidth=2;fontColor=#152b45;fontSize=14;spacing=8;" value="CTRL&#xa;РЕД ОС 8&#xa;Управляющий узел&#xa;192.168.10.11/24" vertex="1">
+          <mxGeometry height="115" width="235" x="315" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="mon" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f8fc;strokeColor=#7791ac;strokeWidth=2;fontColor=#152b45;fontSize=14;spacing=8;" value="MON&#xa;РЕД ОС 8&#xa;Узел мониторинга&#xa;192.168.10.12/24" vertex="1">
+          <mxGeometry height="115" width="235" x="575" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f8fc;strokeColor=#7791ac;strokeWidth=2;fontColor=#152b45;fontSize=14;spacing=8;" value="DB&#xa;РЕД ОС 8&#xa;Хранение данных&#xa;192.168.10.13/24" vertex="1">
+          <mxGeometry height="115" width="235" x="835" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="iot" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f8fc;strokeColor=#7791ac;strokeWidth=2;fontColor=#152b45;fontSize=14;spacing=8;" value="IOT&#xa;РЕД ОС 8 · Node-RED&#xa;Модели TEMP, HUM, FAN&#xa;192.168.10.14/24" vertex="1">
+          <mxGeometry height="115" width="235" x="1095" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="r" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=none;startArrow=none;strokeColor=#52677e;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="s" value="SW порт 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="s" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=none;startArrow=none;strokeColor=#52677e;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="win" value="SW порт 2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="s" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=none;startArrow=none;strokeColor=#52677e;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="ctrl" value="SW порт 3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="s" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=none;startArrow=none;strokeColor=#52677e;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="mon" value="SW порт 4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="s" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=none;startArrow=none;strokeColor=#52677e;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="db" value="SW порт 5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="s" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=none;startArrow=none;strokeColor=#52677e;strokeWidth=2;fontSize=12;labelBackgroundColor=#ffffff;" target="iot" value="SW порт 6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
