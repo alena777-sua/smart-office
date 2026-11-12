@@ -1,0 +1,29 @@
+# Временные файлы Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Временные файлы Linux
+*~
+.nfs*
+
+# Временные файлы редакторов
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Логи
+*.log
+logs/
+
+# Секретные ключи и пароли
+*.pem
+*.key
+id_rsa
+id_ed25519
+.env
+.env.*
+
+# Исключения для Git
+.DS_Store
